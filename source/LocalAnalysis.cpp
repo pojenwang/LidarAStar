@@ -58,6 +58,9 @@ vector<pair<Vector2d,Vector2d>> LocalAnalysis::ScanAnalysis::getGatewaysFromScan
     
     //std::cout<<"\ngateway_length:"<<gateway_length;
     
+    //scan_.ranges[0] = min(scan_.ranges[0], grouping_radius_ / 2 + (float)0.1);
+    //scan_.ranges[scan_.num_data-1] = min(scan_.ranges[scan_.num_data-1], grouping_radius_ / 2 + (float)0.1);
+    
     if(scan_.ranges[0] == 1000)
         scan_.ranges[0] = gateway_length/2;
     if(scan_.ranges[scan_.num_data-1] == 1000)
