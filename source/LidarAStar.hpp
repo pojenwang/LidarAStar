@@ -53,9 +53,11 @@ namespace LidarAStar{
         static float            getGatewayG_Cost(Gateway& gateway_from_, Gateway& gateway_to_);
         static float            getGatewayH_Cost(Gateway& gateway_, Vector3d goal_pose_);
         static Gateway*         findGatewayFromList(vector<LidarAStar::Gateway>& gateway_list_, Vector3d& scan_pose_);
-        static Vector3d         getGatwayScanPose(LidarAStar::Gateway& gateway_);//Vector2d right_bound_, Vector2d left_bound_);
-        static void             printGatewaysToMap(LidarAStar::Gateway& gateway_, cv::Mat map_, float shift_dis_, 
+        static Vector3d         getGatwayScanPose(LidarAStar::Gateway& gateway_, float shift_dist_);//Vector2d right_bound_, Vector2d left_bound_);
+        static void             printGatewayToMap(LidarAStar::Gateway& gateway_, cv::Mat map_, float shift_dist_, 
                                                     cv::Scalar color_, int thickness_);
+        static void             printGatewayEdgeToMap(LidarAStar::Gateway& gateway1_, LidarAStar::Gateway& gateway2_, 
+                                                    cv::Mat map_, cv::Scalar color_, int thickness_);
         static Gateway*         findMinCostGateway(vector<LidarAStar::Gateway>& gateway_list_);
     };
 
