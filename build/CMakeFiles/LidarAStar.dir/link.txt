@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLidarAStar.a CMakeFiles/LidarAStar.dir/source/LidarAStar.cpp.o
+/usr/bin/ranlib libLidarAStar.a

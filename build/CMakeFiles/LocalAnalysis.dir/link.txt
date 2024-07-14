@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLocalAnalysis.a CMakeFiles/LocalAnalysis.dir/source/LocalAnalysis.cpp.o
+/usr/bin/ranlib libLocalAnalysis.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMotionPlanning.a CMakeFiles/MotionPlanning.dir/source/MotionPlanning.cpp.o
+/usr/bin/ranlib libMotionPlanning.a
